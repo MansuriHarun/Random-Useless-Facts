@@ -7,19 +7,19 @@ This project is built with HTML, CSS, and JavaScript. The application uses CSS t
 # Installation
 To run this application locally, follow these steps:
 
-1. Clone the repository to your local machine:
+1. Clone the repository to your local machine: 
 `git clone https://github.com/your-username/Random-Useless-Facts.git`
 
-2. Open the project directory:
+2. Open the project directory: 
 `cd random-useless-facts`
 
 3. Open the `index.html` file in your preferred browser to view the page.
 
-Usage
+# Usage
 To use the web application, simply open the `index.html` file in your preferred browser. The page will display two boxes, one for random facts and one for today's facts. The "RandomFacts" box will initially display a random fact. Click the "Get Random Facts" button to generate a new random fact. The "TodayFacts" box will display a new fact every day.
 
-Contributing
+# Contributing
 If you would like to contribute to this project, feel free to submit a pull request.
 
-License
+# License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
