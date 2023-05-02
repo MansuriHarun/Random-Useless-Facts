@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: black;
+    font-weight: 900;
+}
+
+h1,h2,p,a {
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#RandomFacts {
+    text-align: center;
+    background-color: #282828;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#RandomFacts h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#RandomFacts h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#RandomFacts p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#RandomFacts a {
+    color: white;
+    text-decoration: underline;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#TodayFacts {
+    text-align: center;
+    background-color: #424242;
+    padding: 20px;
+}
+
+#TodayFacts h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#TodayFacts h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#TodayFacts p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#TodayFacts a {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #RandomFacts {
+        padding: 10px;
+    }
+
+    #RandomFacts h1 {
+        font-size: 30px;
+    }
+
+    #RandomFacts h2 {
+        font-size: 25px;
+    }
+
+    #RandomFacts p {
+        font-size: 14px;
+    }
+
+    #TodayFacts {
+        padding: 10px;
+    }
+
+    #TodayFacts h1 {
+        font-size: 30px;
+    }
+
+    #TodayFacts h2 {
+        font-size: 25px;
+    }
+
+    #TodayFacts p {
+        font-size: 14px;
+    }
+}
